@@ -4,19 +4,27 @@ hero: Find your spirit animal
 subtitle: The animal friendly clothing company
 ---
 
-<!-- Hero Section -->
-<section class="hero-banner" data-editable="component">
-  <h1 data-editable>{{ page.hero }}</h1>
-  <p data-editable>{{ page.subtitle }}</p>
-</section>
-
-<ul class="product-list" data-editable="array">
-  {% for product in site.products %}
-    <li data-editable="array-item">
-      <h4 data-editable="text">{{ product.name }}</h4>
-      <div data-editable="text">{{ product.description_markdown | markdownify }}</div>
-      <p data-editable="text">${{ product.price }}</p>
-      <img src="{{ product.styles[0].image }}" data-editable="image" alt="{{ product.name }}">
-    </li>
-  {% endfor %}
-</ul>
+<div class="content" id="products">
+	<section>
+		<div class="container">
+			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+			<ul class="product-list">
+				{% for product in site.products %}
+					<li>
+						{% include product-styles.html product=product %}
+						<div class="product-details">
+							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
+							<div class="product-description">
+								{{ product.description_markdown | truncate: 45 | markdownify }}
+							</div>
+							<p>${{ product.price }}</p>
+						</div>
+					</li>
+				{% endfor %}
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+</div>
