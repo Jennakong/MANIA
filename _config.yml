@@ -27,9 +27,9 @@ social:
 timezone: Etc/UTC
 
 collections:
-  _staff_members:
+  staff_members:
     output: true
-  _products:
+  products:
     output: true
 
 permalink: pretty
