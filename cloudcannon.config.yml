@@ -1,41 +1,108 @@
+collections_config:
+  staff_members:
+    icon: account_circle
+    disable_url: false
+    _enabled_editors:
+      - data
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/staff_members.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+  products:
+    icon: shopping_cart
+    disable_url: false
+    _enabled_editors:
+      - data
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/products.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+  pages:
+    path: ''
+    icon: wysiwyg
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  products_2:
+    path: __products
+    icon: groups_2
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  staff_members_2:
+    path: __staff_members
+    icon: card_membership
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  data:
+    path: _data
+    icon: data_usage
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+  products_1:
+    path: _products
+    icon: groups_2
+    disable_url: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  staff_members_1:
+    path: _staff_members
+    icon: card_membership
+    disable_url: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  map:
+    comment: Update the map location and display settings.
+    cascade: true
+  latitude:
+    comment: Coordinates for the center marker on the map.
+    cascade: true
+  longitude:
+    comment: Coordinates for the center marker on the map.
+    cascade: true
+  zoom:
+    comment: The zoom level for the map.
+    cascade: true
+  pricing_table:
+    comment: Update the information in the pricing tables.
+    cascade: true
+  highlight:
+    comment: Emphasis the text
+    cascade: true
+  color:
+    comment: The background color used in the plan name and call to action.
+    cascade: true
+  new_window:
+    comment: Open link in new window
+    cascade: true
+  description:
+    comment: This is used for facebook shares of the page and google indexing
+    cascade: true
 _select_data:
   garment_types:
     - hat
     - top
-
-_inputs:
-  map:
-    comment: "Update the map location and display settings."
-  latitude:
-    comment: "Coordinates for the center marker on the map."
-  longitude:
-    comment: "Coordinates for the center marker on the map."
-  zoom:
-    comment: "The zoom level for the map."
-  pricing_table:
-    comment: "Update the information in the pricing tables."
-  highlight:
-    comment: "Emphasis the text"
-  color:
-    comment: "The background color used in the plan name and call to action."
-  new_window:
-    comment: "Open link in new window"
-  description:
-    comment: "This is used for facebook shares of the page and google indexing"
-
-collections_config:
-  staff_members:
-    _enabled_editors:
-      - data
-    icon: account_circle
-    schemas:
-      default:
-        path: schemas/staff_members.md
-  products:
-    _enabled_editors:
-      - data
-    output: true
-    icon: shopping_cart
-    schemas:
-      default:
-        path: schemas/products.md
+timezone: Etc/UTC
