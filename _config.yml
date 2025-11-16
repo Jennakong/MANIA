@@ -28,7 +28,7 @@ timezone: Etc/UTC
 
 collections:
   staff_members:
-    output: false
+    output: true
   products:
     output: true
 
