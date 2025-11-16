@@ -31,48 +31,6 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: true
         icon: notes
-  pages:
-    path: ''
-    icon: wysiwyg
-    disable_url: false
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  products_2:
-    path: __products
-    icon: groups_2
-    disable_url: false
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  staff_members_2:
-    path: __staff_members
-    icon: card_membership
-    disable_url: false
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  data:
-    path: _data
-    icon: data_usage
-    disable_url: true
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: true
-  products_1:
-    path: _products
-    icon: groups_2
-    disable_url: true
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  staff_members_1:
-    path: _staff_members
-    icon: card_membership
-    disable_url: true
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
 _inputs:
   map:
     comment: Update the map location and display settings.
